@@ -13,7 +13,7 @@ body {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -48,4 +48,25 @@ h1 {
 .search-button:hover {
   background-color: #2db82d;
   color: black;
+}
+
+.recipe-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.recipe-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
 }
